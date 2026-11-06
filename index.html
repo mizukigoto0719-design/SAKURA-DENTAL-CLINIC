@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>さくらデンタルクリニック | 熊本市中央区の歯科医院</title>
+<meta name="description" content="さくらデンタルクリニックは、一人ひとりのお悩みに寄り添う歯科医院です。一般歯科・予防歯科・小児歯科・歯周病治療・審美歯科。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="logo">
+      <svg class="logo__icon" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 9c-4-4-13-3-14 6-.7 7 3 10 4 17 .5 4 2 8 4 8s2.5-6 3.5-9c.5-1.600 1-2 2.500-2s2 .4 2.500 2c1 3 1.500 9 3.500 9s3.500-4 4-8c1-7 4.700-10 4-17-1-9-10-10-14-6z" fill="#fff" stroke="#d9527a" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__ja">さくらデンタルクリニック</span>
+        <span class="logo__en">SAKURA DENTAL CLINIC</span>
+      </span>
+    </a>
+
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li><a href="#top" class="is-current">ホーム</a></li>
+        <li><a href="#treatment">診療案内</a></li>
+        <li><a href="#concept">当院について</a></li>
+        <li><a href="#features">院長紹介</a></li>
+        <li><a href="#first" data-modal-open="first">初診の方へ</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#news">お知らせ</a></li>
+      </ul>
+      <div class="gnav__sp-cta">
+        <a href="tel:0961234567" class="gnav__tel">096-123-4567</a>
+        <button class="btn btn--primary" type="button" data-modal-open="reserve">WEB予約</button>
+      </div>
+    </nav>
+
+    <div class="header__tel">
+      <a href="tel:0961234567" class="header__tel-num">096-123-4567</a>
+      <span class="header__tel-time">9:00〜12:30 / 14:00〜18:00</span>
+    </div>
+    <button class="btn btn--primary header__reserve" type="button" data-modal-open="reserve">WEB予約</button>
+
+    <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="top">
+
+  <!-- ============ Hero + Side ============ -->
+  <div class="container layout">
+    <div class="layout__main">
+
+      <section class="slider" id="slider" aria-label="メインビジュアル">
+        <div class="slider__viewport">
+          <div class="slider__track">
+            <article class="slide slide--1">
+              <div class="slide__text">
+                <h1 class="slide__title">あなたの笑顔を、<br>ずっと大切に。</h1>
+                <p class="slide__lead">お口の健康から、毎日の暮らしをもっと豊かに。</p>
+                <p class="slide__body">さくらデンタルクリニックは、一人ひとりのお悩みに寄り添い、<br>安心して通える歯科医院を目指しています。<br>小さなお子さまからご年配の方まで、<br>皆さまの健やかな笑顔をサポートします。</p>
+                <button class="btn btn--primary" type="button" data-modal-open="first">初めての方へ →</button>
+              </div>
+            </article>
+            <article class="slide slide--2">
+              <div class="slide__text">
+                <h2 class="slide__title">痛くない、<br>こわくない歯科治療。</h2>
+                <p class="slide__lead">丁寧なカウンセリングと、やさしい治療を。</p>
+                <p class="slide__body">「歯医者さんは苦手…」という方にも<br>安心していただけるよう、治療前にしっかりご説明します。</p>
+                <a class="btn btn--primary" href="#features">当院の特徴 →</a>
+              </div>
+            </article>
+            <article class="slide slide--3">
+              <div class="slide__text">
+                <h2 class="slide__title">お子さまの<br>歯の健康を守ります。</h2>
+                <p class="slide__lead">小児歯科・予防歯科にも力を入れています。</p>
+                <p class="slide__body">楽しく通える院内環境で、<br>むし歯になりにくいお口づくりをサポートします。</p>
+                <a class="btn btn--primary" href="#treatment">診療案内 →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="slider__arrow slider__arrow--prev" type="button" aria-label="前のスライド">‹</button>
+        <button class="slider__arrow slider__arrow--next" type="button" aria-label="次のスライド">›</button>
+        <div class="slider__dots" role="tablist" aria-label="スライド選択"></div>
+      </section>
+
+      <!-- Concept (parallax) -->
+      <section class="concept" id="concept">
+        <div class="concept__text reveal">
+          <p class="eyebrow">CONCEPT</p>
+          <h2 class="concept__title">一人ひとりに寄り添う、やさしい歯科医療。</h2>
+          <p>歯医者さんに対して、「痛そう」「怖い」「何をされるかわからない」といった不安を感じていませんか？<br>
+          さくらデンタルクリニックでは、患者さまのお話を丁寧に伺い、お口の状態や治療について、わかりやすくご説明することを大切にしています。<br>
+          地域の皆さまに信頼していただける身近な歯科医院として、お口の健康を長く支えていきます。</p>
+          <a href="#concept" class="btn btn--outline" data-modal-open="concept">当院のコンセプトを読む →</a>
+        </div>
+        <div class="concept__visual parallax" aria-hidden="true">
+          <div class="parallax__bg" data-parallax="0.12"></div>
+        </div>
+      </section>
+
+      <!-- Treatment -->
+      <section class="section" id="treatment">
+        <div class="section__head">
+          <h2 class="section__title">診療案内<span class="section__en">TREATMENT</span></h2>
+          <a href="#treatment" class="more">診療案内を詳しく見る →</a>
+        </div>
+        <p class="section__lead">お口のお悩みに合わせた診療をご案内します。</p>
+        <ul class="cards">
+          <li class="card reveal"><a href="ippan.html"><span class="card__icon"><img src="images/ippann.svg" alt=""></span><h3>一般歯科</h3><p>虫歯や歯の痛み、詰め物・被せ物など、お口のトラブルを治療します。</p><span class="card__arrow">→</span></a></li>
+          <li class="card reveal"><a href="yobou.html"><span class="card__icon"><img src="images/yobou.svg" alt=""></span><h3>予防歯科</h3><p>定期検診やクリーニング、セルフケアのアドバイスで健康な歯を守ります。</p><span class="card__arrow">→</span></a></li>
+          <li class="card reveal"><a href="syouni.html"><span class="card__icon"><img src="images/syouni.svg" alt=""></span><h3>小児歯科</h3><p>お子さまの成長に合わせて、お口の健康をサポートします。</p><span class="card__arrow">→</span></a></li>
+          <li class="card reveal"><a href="sisyuubyou.html"><span class="card__icon"><img src="images/sisyuubyou.svg" alt=""></span><h3>歯周病治療</h3><p>歯ぐきの腫れや出血などの症状を確認し、進行状態に応じた治療を行います。</p><span class="card__arrow">→</span></a></li>
+          <li class="card reveal"><a href="sinnnbi.html"><span class="card__icon"><img src="images/sinnnbi.svg" alt=""></span><h3>審美歯科</h3><p>歯の色や形など、見た目に関するお悩みに対応します。</p><span class="card__arrow">→</span></a></li>
+        </ul>
+      </section>
+
+      <!-- Features -->
+      <section class="section" id="features">
+        <div class="section__head">
+          <h2 class="section__title">当院の特徴<span class="section__en">FEATURES</span></h2>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feature__img feature__img--1"></div>
+            <div class="feature__body"><span class="feature__no">01</span><h3>丁寧なカウンセリング</h3><p>お口のお悩みや治療への不安を、じっくりお聞きし、一人ひとりに合った治療方法をご提案します。</p></div>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__img feature__img--2"></div>
+            <div class="feature__body"><span class="feature__no">02</span><h3>わかりやすい説明</h3><p>現在の状態や治療の流れ、費用などについて、できる限りわかりやすくご説明します。</p></div>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__img feature__img--3"></div>
+            <div class="feature__body"><span class="feature__no">03</span><h3>清潔で快適な院内環境</h3><p>徹底した衛生管理と、快適に過ごせる空間づくりで、安心して通っていただけます。</p></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Parallax band -->
+      <section class="band parallax" aria-label="初めてご来院される方へ">
+        <div class="parallax__bg parallax__bg--band" data-parallax="0.2"></div>
+        <div class="band__inner">
+          <p class="eyebrow eyebrow--light">FIRST VISIT</p>
+          <h2>初めてご来院される方へ</h2>
+          <p>初めての歯医者さんは、不安や緊張を感じることもあるかと思います。<br>当院では、患者さまが安心して治療を受けられるよう、丁寧にご説明いたします。</p>
+          <button class="btn btn--white" type="button" data-modal-open="first">初診の流れを見る →</button>
+        </div>
+      </section>
+
+      <!-- FAQ accordion -->
+      <section class="section" id="faq">
+        <div class="section__head">
+          <h2 class="section__title">よくある質問<span class="section__en">FAQ</span></h2>
+        </div>
+        <div class="accordion" id="accordion">
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq1" id="faq1-btn"><span class="accordion__q">Q</span>初めて受診する場合、予約は必要ですか？</button></h3>
+            <div class="accordion__panel" id="faq1" role="region" aria-labelledby="faq1-btn"><div class="accordion__inner"><p>お電話またはWEB予約をおすすめしています。お待たせする時間を短くでき、ゆっくりお話を伺えます。急な痛みの場合は、まずお電話でご相談ください。</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq2" id="faq2-btn"><span class="accordion__q">Q</span>歯医者が苦手なのですが、相談できますか？</button></h3>
+            <div class="accordion__panel" id="faq2" role="region" aria-labelledby="faq2-btn"><div class="accordion__inner"><p>もちろんです。不安な点や苦手なことを事前にお伝えください。治療前に内容を丁寧にご説明し、無理のないペースで進めます。</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq3" id="faq3-btn"><span class="accordion__q">Q</span>子どもと一緒に通院できますか？</button></h3>
+            <div class="accordion__panel" id="faq3" role="region" aria-labelledby="faq3-btn"><div class="accordion__inner"><p>はい、親子で同じ時間帯にご予約いただくことも可能です。小児歯科にも対応しておりますので、お気軽にご相談ください。</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq4" id="faq4-btn"><span class="accordion__q">Q</span>定期検診はどのくらいの頻度で受ければよいですか？</button></h3>
+            <div class="accordion__panel" id="faq4" role="region" aria-labelledby="faq4-btn"><div class="accordion__inner"><p>一般的には3〜6か月に1回が目安です。お口の状態によって最適な間隔は異なりますので、診察時にご案内します。</p></div></div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /layout__main -->
+
+    <!-- ============ Sidebar ============ -->
+    <aside class="side">
+      <div class="side__box side__reserve">
+        <h2 class="side__title">WEB予約はこちら</h2>
+        <p class="side__note">24時間いつでもご予約いただけます</p>
+        <button class="btn btn--primary btn--block" type="button" data-modal-open="reserve">WEB予約する →</button>
+        <div class="side__tel">
+          <span>お電話でのご予約・お問い合わせ</span>
+          <a href="tel:0961234567">096-123-4567</a>
+          <small>9:00〜12:30 / 14:00〜18:00</small>
+        </div>
+      </div>
+
+      <div class="side__box" id="hours">
+        <h2 class="side__heading">診療時間</h2>
+        <table class="hours">
+          <thead><tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日・祝</th></tr></thead>
+          <tbody>
+            <tr><th>9:00〜12:30</th><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>休</td></tr>
+            <tr><th>14:00〜18:00</th><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>△</td><td>休</td></tr>
+          </tbody>
+        </table>
+        <p class="hours__note">△：土曜午後は14:00〜17:00<br>休診日：木曜午後・日曜・祝日</p>
+      </div>
+
+      <div class="side__box" id="access">
+        <h2 class="side__heading">アクセス</h2>
+        <div class="side__photo"></div>
+        <p class="side__addr">熊本県熊本市中央区桜町1-2-3</p>
+      </div>
+
+      <div class="side__box" id="news">
+        <div class="side__headrow"><h2 class="side__heading">お知らせ</h2><a href="news.html" class="more">一覧を見る →</a></div>
+        <ul class="news">
+          <li><time>2026.10.30</time><a href="news.html#20261030">ホームページを公開しました。</a></li>
+          <li><time>2026.10.25</time><a href="news.html#20261025">11月の診療スケジュールについて</a></li>
+          <li><time>2026.10.15</time><a href="news.html#20261015">定期検診のご案内</a></li>
+          <li><time>2026.10.01</time><a href="news.html#20261001">初診の患者さまへ</a></li>
+        </ul>
+      </div>
+
+      <div class="side__kids">
+        <p>お子さまの<br>歯の健康を<br>大切に</p>
+        <a href="syouni.html" class="btn btn--outline btn--sm">小児歯科について →</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="logo__ja">さくらデンタルクリニック</span>
+      <span class="logo__en">SAKURA DENTAL CLINIC</span>
+    </div>
+    <ul class="footer__nav">
+      <li><a href="#top">ホーム</a></li><li><a href="#treatment">診療案内</a></li><li><a href="#concept">当院について</a></li>
+      <li><a href="#features">院長紹介</a></li><li><a href="#first" data-modal-open="first">初診の方へ</a></li><li><a href="#access">アクセス</a></li><li><a href="#news">お知らせ</a></li>
+    </ul>
+    <div class="footer__tel">
+      <a href="tel:0961234567">096-123-4567</a><small>9:00〜12:30 / 14:00〜18:00</small>
+    </div>
+    <button class="btn btn--primary" type="button" data-modal-open="reserve">WEB予約</button>
+  </div>
+  <p class="footer__copy">© 2026 さくらデンタルクリニック All Rights Reserved.</p>
+</footer>
+
+<a href="#top" class="totop" id="totop" aria-label="ページ上部へ">↑</a>
+
+<!-- ============ Modals ============ -->
+<div class="modal" id="modal-reserve" role="dialog" aria-modal="true" aria-labelledby="modal-reserve-title" aria-hidden="true">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog" tabindex="-1">
+    <button class="modal__close" type="button" aria-label="閉じる" data-modal-close>×</button>
+    <h2 class="modal__title" id="modal-reserve-title">WEB予約</h2>
+    <p class="modal__lead">ご希望の日時をお知らせください。<br>内容確認後、スタッフよりご連絡いたします。</p>
+    <form class="form" id="reserveForm" novalidate>
+      <label>お名前<span class="req">必須</span><input type="text" name="name" required autocomplete="name"></label>
+      <label>電話番号<span class="req">必須</span><input type="tel" name="tel" required autocomplete="tel" placeholder="096-123-4567"></label>
+      <label>ご希望日<input type="date" name="date"></label>
+      <label>ご相談内容
+        <select name="menu">
+          <option>一般歯科（むし歯・痛み）</option><option>予防歯科（検診・クリーニング）</option>
+          <option>小児歯科</option><option>歯周病治療</option><option>審美歯科</option>
+        </select>
+      </label>
+      <p class="form__error" id="formError" role="alert" hidden>お名前と電話番号をご入力ください。</p>
+      <button class="btn btn--primary btn--block" type="submit">予約リクエストを送信</button>
+    </form>
+    <div class="form__done" id="formDone" hidden>
+      <p class="form__done-title">送信ありがとうございました 🌸</p>
+      <p>※これはデモ表示です。実際の送信処理はサーバー側で実装してください。</p>
+      <button class="btn btn--outline" type="button" data-modal-close>閉じる</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-concept" role="dialog" aria-modal="true" aria-labelledby="modal-concept-title" aria-hidden="true">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog" tabindex="-1">
+    <button class="modal__close" type="button" aria-label="閉じる" data-modal-close>×</button>
+    <h2 class="modal__title" id="modal-concept-title">当院のコンセプト</h2>
+    <p class="modal__lead">一人ひとりに寄り添う、やさしい歯科医療。</p>
+    <p class="modal__text">歯医者さんに対して、「痛そう」「怖い」「何をされるかわからない」といった不安を感じていませんか？</p>
+    <p class="modal__text">さくらデンタルクリニックでは、患者さまのお話を丁寧に伺い、お口の状態や治療について、わかりやすくご説明することを大切にしています。</p>
+    <p class="modal__text">地域の皆さまに信頼していただける身近な歯科医院として、お口の健康を長く支えていきます。</p>
+    <button class="btn btn--primary btn--block" type="button" data-modal-open="reserve">WEB予約する →</button>
+  </div>
+</div>
+
+<div class="modal" id="modal-first" role="dialog" aria-modal="true" aria-labelledby="modal-first-title" aria-hidden="true">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog" tabindex="-1">
+    <button class="modal__close" type="button" aria-label="閉じる" data-modal-close>×</button>
+    <h2 class="modal__title" id="modal-first-title">初めての方へ</h2>
+    <ol class="steps">
+      <li><b>ご予約</b><span>お電話またはWEB予約から、ご希望の日時をお選びください。</span></li>
+      <li><b>受付・問診</b><span>問診票にお口のお悩みやご不安をご記入ください。保険証をお持ちください。</span></li>
+      <li><b>カウンセリング・検査</b><span>お話を伺い、必要に応じてレントゲンなどの検査を行います。</span></li>
+      <li><b>ご説明・治療計画</b><span>状態・治療内容・費用をわかりやすくご説明し、ご納得のうえで治療を開始します。</span></li>
+    </ol>
+    <button class="btn btn--primary btn--block" type="button" data-modal-open="reserve">WEB予約する →</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

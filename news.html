@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お知らせ | さくらデンタルクリニック</title>
+<meta name="description" content="さくらデンタルクリニックからのお知らせ一覧です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo">
+      <svg class="logo__icon" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 9c-4-4-13-3-14 6-.7 7 3 10 4 17 .5 4 2 8 4 8s2.5-6 3.5-9c.5-1.600 1-2 2.500-2s2 .4 2.500 2c1 3 1.500 9 3.500 9s3.500-4 4-8c1-7 4.700-10 4-17-1-9-10-10-14-6z" fill="#fff" stroke="#d9527a" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__ja">さくらデンタルクリニック</span>
+        <span class="logo__en">SAKURA DENTAL CLINIC</span>
+      </span>
+    </a>
+
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li><a href="index.html#top">ホーム</a></li>
+        <li><a href="index.html#treatment">診療案内</a></li>
+        <li><a href="index.html#concept">当院について</a></li>
+        <li><a href="index.html#features">院長紹介</a></li>
+        <li><a href="#first" data-modal-open="first">初診の方へ</a></li>
+        <li><a href="index.html#access">アクセス</a></li>
+        <li><a href="news.html" class="is-current">お知らせ</a></li>
+      </ul>
+      <div class="gnav__sp-cta">
+        <a href="tel:0961234567" class="gnav__tel">096-123-4567</a>
+        <button class="btn btn--primary" type="button" data-modal-open="reserve">WEB予約</button>
+      </div>
+    </nav>
+
+    <div class="header__tel">
+      <a href="tel:0961234567" class="header__tel-num">096-123-4567</a>
+      <span class="header__tel-time">9:00〜12:30 / 14:00〜18:00</span>
+    </div>
+    <button class="btn btn--primary header__reserve" type="button" data-modal-open="reserve">WEB予約</button>
+
+    <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="top">
+
+  <!-- Page title -->
+  <section class="subhero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">ホーム</a><span>›</span><span aria-current="page">お知らせ</span>
+      </nav>
+      <p class="eyebrow">NEWS</p>
+      <h1 class="subhero__title">お知らせ</h1>
+      <p class="subhero__lead">当院からのお知らせを掲載しています。</p>
+    </div>
+  </section>
+
+  <div class="container subpage">
+
+    <section class="subsection reveal">
+      <h2 class="subsection__title">お知らせ一覧</h2>
+      <ul class="newslist">
+        <li id="n20261030">
+          <time datetime="2026-10-30">2026.10.30</time>
+          <h3>ホームページを公開しました。</h3>
+          <p>さくらデンタルクリニックのホームページを公開しました。診療案内や診療時間、アクセスなどをご確認いただけます。今後も、お知らせを随時更新してまいります。</p>
+        </li>
+        <li id="n20261025">
+          <time datetime="2026-10-25">2026.10.25</time>
+          <h3>11月の診療スケジュールについて</h3>
+          <p>11月の診療についてのお知らせです。診療時間・休診日は、トップページの診療時間表をご確認ください。ご不明な点はお電話でお問い合わせください。</p>
+        </li>
+        <li id="n20261015">
+          <time datetime="2026-10-15">2026.10.15</time>
+          <h3>定期検診のご案内</h3>
+          <p>むし歯や歯周病は、早めに見つけることが大切です。痛みがなくても、定期的にお口の状態をチェックすることをおすすめしています。ご希望の方はお電話またはWEB予約からご相談ください。</p>
+        </li>
+        <li id="n20261001">
+          <time datetime="2026-10-01">2026.10.01</time>
+          <h3>初診の患者さまへ</h3>
+          <p>初めてご来院の方は、保険証をお持ちください。ご予約から治療開始までの流れは、「初診の方へ」でご案内しています。不安な点は、ご来院時にお気軽にお声がけください。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta reveal">
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p>診療についてのご質問やご予約は、お電話またはWEB予約からご連絡ください。</p>
+      <div class="cta__actions">
+        <button class="btn btn--primary" type="button" data-modal-open="reserve">WEB予約する →</button>
+        <a href="tel:0961234567" class="cta__tel">096-123-4567<small>9:00〜12:30 / 14:00〜18:00</small></a>
+      </div>
+    </section>
+
+    <p class="backlink"><a href="index.html" class="more">← ホームへ戻る</a></p>
+  </div>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="logo__ja">さくらデンタルクリニック</span>
+      <span class="logo__en">SAKURA DENTAL CLINIC</span>
+    </div>
+    <ul class="footer__nav">
+      <li><a href="index.html#top">ホーム</a></li><li><a href="index.html#treatment">診療案内</a></li><li><a href="index.html#concept">当院について</a></li>
+      <li><a href="index.html#features">院長紹介</a></li><li><a href="#first" data-modal-open="first">初診の方へ</a></li><li><a href="index.html#access">アクセス</a></li><li><a href="index.html#news">お知らせ</a></li>
+    </ul>
+    <div class="footer__tel">
+      <a href="tel:0961234567">096-123-4567</a><small>9:00〜12:30 / 14:00〜18:00</small>
+    </div>
+    <button class="btn btn--primary" type="button" data-modal-open="reserve">WEB予約</button>
+  </div>
+  <p class="footer__copy">© 2026 さくらデンタルクリニック All Rights Reserved.</p>
+</footer>
+
+<a href="#top" class="totop" id="totop" aria-label="ページ上部へ">↑</a>
+
+<!-- ============ Modals ============ -->
+<div class="modal" id="modal-reserve" role="dialog" aria-modal="true" aria-labelledby="modal-reserve-title" aria-hidden="true">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog" tabindex="-1">
+    <button class="modal__close" type="button" aria-label="閉じる" data-modal-close>×</button>
+    <h2 class="modal__title" id="modal-reserve-title">WEB予約</h2>
+    <p class="modal__lead">ご希望の日時をお知らせください。<br>内容確認後、スタッフよりご連絡いたします。</p>
+    <form class="form" id="reserveForm" novalidate>
+      <label>お名前<span class="req">必須</span><input type="text" name="name" required autocomplete="name"></label>
+      <label>電話番号<span class="req">必須</span><input type="tel" name="tel" required autocomplete="tel" placeholder="096-123-4567"></label>
+      <label>ご希望日<input type="date" name="date"></label>
+      <label>ご相談内容
+        <select name="menu">
+          <option>一般歯科（むし歯・痛み）</option><option>予防歯科（検診・クリーニング）</option>
+          <option>小児歯科</option><option>歯周病治療</option><option>審美歯科</option>
+        </select>
+      </label>
+      <p class="form__error" id="formError" role="alert" hidden>お名前と電話番号をご入力ください。</p>
+      <button class="btn btn--primary btn--block" type="submit">予約リクエストを送信</button>
+    </form>
+    <div class="form__done" id="formDone" hidden>
+      <p class="form__done-title">送信ありがとうございました 🌸</p>
+      <p>※これはデモ表示です。実際の送信処理はサーバー側で実装してください。</p>
+      <button class="btn btn--outline" type="button" data-modal-close>閉じる</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-first" role="dialog" aria-modal="true" aria-labelledby="modal-first-title" aria-hidden="true">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog" tabindex="-1">
+    <button class="modal__close" type="button" aria-label="閉じる" data-modal-close>×</button>
+    <h2 class="modal__title" id="modal-first-title">初めての方へ</h2>
+    <ol class="steps">
+      <li><b>ご予約</b><span>お電話またはWEB予約から、ご希望の日時をお選びください。</span></li>
+      <li><b>受付・問診</b><span>問診票にお口のお悩みやご不安をご記入ください。保険証をお持ちください。</span></li>
+      <li><b>カウンセリング・検査</b><span>お話を伺い、必要に応じてレントゲンなどの検査を行います。</span></li>
+      <li><b>ご説明・治療計画</b><span>状態・治療内容・費用をわかりやすくご説明し、ご納得のうえで治療を開始します。</span></li>
+    </ol>
+    <button class="btn btn--primary btn--block" type="button" data-modal-open="reserve">WEB予約する →</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
